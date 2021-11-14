@@ -1,0 +1,73 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "2fd68b7f-3774-426d-9984-64c856a4366c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "val dicho : 'a -> 'a array -> bool = <fun>\n",
+      "val ncho : int -> 'a -> 'a array -> bool = <fun>\n",
+      "val exp_rapide : float -> int -> float = <fun>\n",
+      "val sqrt : float -> int -> float = <fun>\n",
+      "val nthroot : float -> int -> int -> float = <fun>\n"
+     ]
+    }
+   ],
+   "source": [
+    "#use \"./basic_algo(1)(3).ml\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "41c1b98d-06cf-45fc-94c9-c4329d0b183f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : bool = true\n"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dicho 8 [|-5;8;9|]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bb3090cb-377d-49e1-9a52-9a5a3ce4e1f4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "OCaml default",
+   "language": "OCaml",
+   "name": "ocaml-jupyter"
+  },
+  "language_info": {
+   "codemirror_mode": "text/x-ocaml",
+   "file_extension": ".ml",
+   "mimetype": "text/x-ocaml",
+   "name": "OCaml",
+   "nbconverter_exporter": null,
+   "pygments_lexer": "OCaml",
+   "version": "4.08.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
