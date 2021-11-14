@@ -1,0 +1,386 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "6bd5bfc1-2d01-417c-b66f-9b601ddf436f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "val asomme : int array -> int = <fun>\n",
+      "val amaximum : 'a array -> 'a = <fun>\n",
+      "val aminimum : 'a array -> 'a = <fun>\n",
+      "val list_of_array : 'a array -> 'a list = <fun>\n",
+      "val acroissant : 'a array -> bool = <fun>\n",
+      "val max_local : 'a array -> int = <fun>\n",
+      "val tranche_max : int array -> int = <fun>\n",
+      "val inversions : 'a array -> int = <fun>\n",
+      "val areverse : 'a array -> 'a array = <fun>\n",
+      "val aresearch : 'a -> 'a array -> bool = <fun>\n",
+      "val lsomme : int list -> int = <fun>\n",
+      "val lmaximum : 'a list -> 'a = <fun>\n",
+      "val lminimum : 'a list -> 'a = <fun>\n",
+      "val lcroissant : 'a list -> bool = <fun>\n",
+      "val lreverse : 'a list -> 'a list = <fun>\n",
+      "val lresearch : 'a -> 'a list -> bool = <fun>\n",
+      "val split : 'a list -> 'a list * 'a list = <fun>\n",
+      "val fusion : 'a list -> 'a list -> 'a list = <fun>\n",
+      "val tri_fusion : 'a list -> 'a list = <fun>\n",
+      "val concat : 'a list -> 'a list -> 'a list = <fun>\n",
+      "val partition : 'a -> 'a list -> 'a list * 'a list = <fun>\n",
+      "val quicksort : 'a list -> 'a list = <fun>\n"
+     ]
+    }
+   ],
+   "source": [
+    "#use \"./basic_tools.ml\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "397ab152-0848-4989-a5e1-d65a154d7c17",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "val a : int array = [|0; 1; 2; 8; 18; 1345; 9998|]\n"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "let a = [|0;1;2;8;18;1345;9998|];;"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "082b0b5e-4806-499f-a864-c7ef77e8839b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int = 11372\n"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "asomme a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "760b2a57-bfcb-4356-b3b4-eb65f25ec434",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int = 9998\n"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "amaximum a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "cedf67f7-0a56-4326-b19f-92084e794f4e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int = 0\n"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "aminimum a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "54000417-178c-442a-8806-9cf21b5aeb32",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int list = [9998; 1345; 18; 8; 2; 1]\n"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list_of_array a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "3f0b35d8-7d41-4779-8cbe-0cf33c6353b3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : bool = true\n"
+      ]
+     },
+     "execution_count": 22,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "acroissant a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "1fb21e4d-d639-411a-ae05-82cf3fb4bff2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int = 6\n"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "max_local a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "bf5e9c14-9e26-4448-a15c-0a2be0a3fcc7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int = 11372\n"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "tranche_max a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "4246aa03-8402-405e-b1cb-360a87fdf23a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int = 0\n"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "inversions a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "b4103589-2170-424a-bb76-f18415bcfc86",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int array = [|9998; 1345; 18; 8; 2; 1; 0|]\n"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "areverse a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "8d2a1137-8a05-4b75-a4e6-90170caff705",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : bool = true\n"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "aresearch 0 a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "fa73aa2e-dc2c-4844-9ecb-affa073128ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "val l : int list = [0; 1; 2; 8; 18; 1345; 9998]\n"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "let l = [0;1;2;8;18;1345;9998];;"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "62bdfe27-b226-48fe-b87a-ccdfc5128475",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int = 11372\n"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "lsomme l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "b3a13181-65a9-416c-84a6-4fd883fedbfc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int = 9998\n"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "lmaximum l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "c662312e-d890-46a8-ba32-774f97a7e92f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "- : int = 0\n"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "lminimum l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "106ecec9-07a8-402a-a12f-36dc20c8efca",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "lcroissant "
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "OCaml default",
+   "language": "OCaml",
+   "name": "ocaml-jupyter"
+  },
+  "language_info": {
+   "codemirror_mode": "text/x-ocaml",
+   "file_extension": ".ml",
+   "mimetype": "text/x-ocaml",
+   "name": "OCaml",
+   "nbconverter_exporter": null,
+   "pygments_lexer": "OCaml",
+   "version": "4.08.1"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
