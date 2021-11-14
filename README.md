@@ -2,7 +2,7 @@
 
 
 
-Bibliothèque située dans le répertoire bibliothèque, composée de trois headers différents :
+# Bibliothèque située dans le répertoire bibliothèque, composée de trois headers différents :
 - types.ml qui fournit tous les types implémentés
 - basic_tools.ml qui fournit tous les algorithmes basiques nécessaires lors de l'utilisation de listes ou de tableaux
 - basic_algo.ml qui fournit certains algorithmes de recherche avancés, ainsi que des outils mathématiques aux algorithmes que j'ai trouvé intéressants
@@ -10,8 +10,7 @@ Bibliothèque située dans le répertoire bibliothèque, composée de trois head
 Toutes les fonctions sont accompagnées d'exemples afin de mieux saisir leurs... fonctions.
 
 
-
-
+# Sujet :
 
 Pour poser des questions : https://github.com/mp2i-fsm/mp2i-2021/discussions  
 
