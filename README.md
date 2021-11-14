@@ -1,5 +1,18 @@
 # Bibliothèque OCaml pour l'informatique en MP2I
 
+
+
+Bibliothèque située dans le répertoire bibliothèque, composée de trois headers différents :
+- types.ml qui fournit tous les types implémentés
+- basic_tools.ml qui fournit tous les algorithmes basiques nécessaires lors de l'utilisation de listes ou de tableaux
+- basic_algo.ml qui fournit certains algorithmes de recherche avancés, ainsi que des outils mathématiques aux algorithmes que j'ai trouvé intéressants
+
+Toutes les fonctions sont accompagnées d'exemples afin de mieux saisir leurs... fonctions.
+
+
+
+
+
 Pour poser des questions : https://github.com/mp2i-fsm/mp2i-2021/discussions  
 
 Suivre les étapes suivantes pour la mise en place de la bibliothèque :
